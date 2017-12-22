@@ -3,3 +3,4 @@
 /*.wasm.map
 /*.wast
 /*.html
+/build

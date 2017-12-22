@@ -3,6 +3,8 @@
 set -x
 set -e
 
+test -d build || mkdir build
+
 # -s passes options to the JavaScript/WASM code generator
 # -g causes generation of the wasm.map and wast files
 em++ \
@@ -13,4 +15,4 @@ em++ \
   -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall", "cwrap"]' \
   --emrun \
   --pre-js application.js \
-  -o wheel_of_lunch.html
+  -o build/index.html
