@@ -8,6 +8,9 @@ test -d build || mkdir build
 # -s passes options to the JavaScript/WASM code generator
 # -g causes generation of the wasm.map and wast files
 em++ \
+  -std=c++11 \
+  -Wall \
+  -Wextra \
   -g \
   wheel_of_lunch.cpp \
   -s WASM=1 \
