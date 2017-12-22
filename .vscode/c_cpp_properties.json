@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "Wasm",
+            "includePath": [
+                "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/libcxx",
+                "/usr/local/Cellar/emscripten/1.37.24/libexec/system/lib/libcxxabi/include",
+                "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/compat",
+                "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include",
+                "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/SSE",
+                "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/libc",
+                "/usr/local/Cellar/emscripten/1.37.24/libexec/system/lib/libc/musl/arch/emscripten",
+                "/usr/local/Cellar/emscripten/1.37.24/libexec/system/local/include",
+                "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/SDL",
+                "${workspaceRoot}"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/libcxx",
+                    "/usr/local/Cellar/emscripten/1.37.24/libexec/system/lib/libcxxabi/include",
+                    "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/compat",
+                    "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include",
+                    "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/SSE",
+                    "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/libc",
+                    "/usr/local/Cellar/emscripten/1.37.24/libexec/system/lib/libc/musl/arch/emscripten",
+                    "/usr/local/Cellar/emscripten/1.37.24/libexec/system/local/include",
+                    "/usr/local/Cellar/emscripten/1.37.24/libexec/system/include/SDL",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": false,
+                "databaseFilename": ""
+            },
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
+        }
+    ],
+    "version": 3
+}
