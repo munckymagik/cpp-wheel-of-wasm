@@ -1,4 +1,4 @@
 Module.onRuntimeInitialized = function () {
   let makeSuggestion = Module.cwrap('make_suggestion', 'string')
-  Module.print(makeSuggestion())
+  Module.print("Suggestion is: " + makeSuggestion())
 }
