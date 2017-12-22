@@ -12,7 +12,7 @@ em++ \
   -Wall \
   -Wextra \
   -g \
-  wheel_of_lunch.cpp \
+  lib.cpp \
   -s WASM=1 \
   -s EXPORTED_FUNCTIONS='["_make_suggestion"]' \
   -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall", "cwrap"]' \
