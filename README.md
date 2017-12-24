@@ -29,3 +29,13 @@ Serve web page:
 ```
 
 Now open in your browser: http://localhost:8080/
+
+# Publishing using GitHub Pages
+
+Run
+
+```
+./publish.sh
+```
+
+This will create or update the `./docs` folder, which can then be checked in to `master` and will then be used by GitHub Pages to serve the site.
