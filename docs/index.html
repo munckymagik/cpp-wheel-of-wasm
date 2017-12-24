@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WASM Wheel of Lunch</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 1em;
+    }
+    .big {
+      font-size: 7rem;
+    }
+    .huge {
+      font-size: 15rem;
+    }
+    .big-button {
+      font-size: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="big">C++ says, eat at ...</div>
+  <div id="suggestion" class="huge"></div>
+  <button id="again" class="big-button">NO! TRY AGAIN!</button>
+
+  <script type="text/javascript">
+    var Module = {
+      preRun: [],
+      postRun: [],
+      print: console.log,
+      printErr: function (text) {
+        if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
+        console.error(text);
+      },
+      setStatus: console.log,
+      totalDependencies: 0,
+      monitorRunDependencies: function (left) {
+        this.totalDependencies = Math.max(this.totalDependencies, left);
+        Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies - left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
+      }
+    };
+    Module.setStatus('Downloading...');
+    window.onerror = function () {
+      Module.setStatus('Exception thrown, see JavaScript console');
+      Module.setStatus = function (text) {
+        if (text) Module.printErr('[post-exception status] ' + text);
+      };
+    };
+  </script> <script async type="text/javascript" src="index.js"></script>
+</body>
+</html>
