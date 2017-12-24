@@ -18,4 +18,5 @@ em++ \
   -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall", "cwrap"]' \
   --emrun \
   --pre-js application.js \
-  -o build/index.html
+  -o build/index.html \
+  --shell-file index_template.html
