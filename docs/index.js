@@ -1771,7 +1771,7 @@ var ASM_CONSTS = [];
 
 STATIC_BASE = Runtime.GLOBAL_BASE;
 
-STATICTOP = STATIC_BASE + 3264;
+STATICTOP = STATIC_BASE + 3312;
 /* global initializers */  __ATINIT__.push();
 
 
@@ -1780,7 +1780,7 @@ memoryInitializer = null;
 
 
 
-var STATIC_BUMP = 3264;
+var STATIC_BUMP = 3312;
 Module["STATIC_BASE"] = STATIC_BASE;
 Module["STATIC_BUMP"] = STATIC_BUMP;
 
